@@ -1,0 +1,69 @@
+<div>
+    <div class="submit-form">
+        <div *ngIf="!submitted">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="nom"
+                    required
+                    [(ngModel)]="terrain.nom"
+                    name="nom"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="discription">Description</label>
+                <input
+                    class="form-control"
+                    id="discription"
+                    required
+                    [(ngModel)]="terrain.discription"
+                    name="discription"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="s">Surface</label>
+                <input
+                    type="number"
+                    class="form-control"
+                    id="s"
+                    required
+                    [(ngModel)]="terrain.s"
+                    name="s"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="categorie">Categorie</label>
+                <input
+                    class="form-control"
+                    id="categorie"
+                    required
+                    [(ngModel)]="terrain.categorie"
+                    name="categorie"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="redevable">Redevable</label>
+                <input
+                    class="form-control"
+                    id="redevable"
+                    required
+                    [(ngModel)]="terrain.redevable"
+                    name="redevable"
+                />
+            </div>
+
+            <button (click)="saveTerraine()" class="btn btn-success">Submit</button>
+        </div>
+
+        <div *ngIf="submitted">
+            <h4>Terrain was added successfully!</h4>
+            <button class="btn btn-success" (click)="newTerrain()">Add Another</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: '/assets/Pr-nasim.jpg'; /* Mettez ici le chemin de votre image */
+    background-size: cover; /* Permet à l'image de couvrir entièrement la page */
+    background-position: center; /* Centrer l'image dans la page */
+    color: white; /* Change la couleur du texte pour une meilleure visibilité */
+    font-family: Arial, sans-serif; /* Change la police du texte si nécessaire */
+}
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+}

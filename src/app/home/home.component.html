@@ -1,0 +1,37 @@
+<div class="home-container container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title text-center mb-4">Tax TNB</h1>
+      
+
+      <form #taxForm="ngForm">
+        <!-- Input for Terrain Name -->
+        <div class="form-group">
+          <label for="terrainName">Terrain Name:</label>
+          <input type="text" class="form-control" id="terrainName" name="terrainName" placeholder="Enter Terrain Name">
+        </div>
+
+        <!-- Input for Tax Year -->
+        <div class="form-group">
+          <label for="taxYear">Tax Year:</label>
+          <input type="number" class="form-control" id="taxYear" name="taxYear" placeholder="Enter Tax Year">
+        </div>
+
+        <!-- Input for Redevable's CIN -->
+        <div class="form-group">
+          <label for="redevableCin">Redevable's CIN:</label>
+          <input type="text" class="form-control" id="redevableCin" name="redevableCin" placeholder="Enter Redevable's CIN">
+        </div>
+
+        <!-- Add more input fields as needed -->
+
+        <button type="submit" class="btn btn-primary">Calculate Tax</button>
+      </form>
+
+      <!-- Drawing Canvas -->
+      <div class="mt-4">
+        <canvas id="drawingCanvas" class="border" width="400" height="100"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
